@@ -1,0 +1,237 @@
+html {
+    overflow: hidden;
+    --color-highlight: #5051D8;
+    --color-text: #566270;
+    --color-lightbg: #EDF1F7;
+}
+
+body {
+    background-color: var(--color-lightbg);
+    color: var(--color-text) !important;
+    width: 380px;
+    height: 600px;
+    font-size: 0.75em;
+    font-family: 'Open Sans', sans-serif;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+.slot-rectangle {
+    background: rgba(192, 192, 192, 0.8);
+    border: 1px solid black;
+    border-radius: 2px;
+    margin-bottom: 5px;
+}
+
+.tooltip-holder {
+    border-bottom: 1px dotted black;
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+.icon {
+    display: inline-block;
+    fill: currentColor;
+    height: 0.9rem;
+    width: 0.9rem;
+    margin-right: 0.5rem;
+}
+
+.icon-bigger {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.icon-full {
+    height: 6.5rem;
+    width: 6.5rem;
+    opacity: 0.5;
+    margin-bottom: 20px;
+}
+
+.nav-tabs .nav-link {
+    display: flex;
+    align-items: center;
+    border: none;
+    color: var(--color-text);
+}
+
+.nav-tabs .nav-link.active {
+    border-radius: none;
+    background-color: inherit;
+    color: var(--color-highlight);
+}
+
+.inner-nav {
+    background-color: white;
+    border-top: 1px solid var(--color-highlight);
+    border-bottom: 1px solid var(--color-highlight);
+}
+
+.inner-nav .nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.35rem 0;
+}
+
+.row.inner-nav {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.inner-nav .nav-item {
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.inner-nav.nav-tabs .nav-link {
+    margin-bottom: 0;
+    border-radius: 0;
+    background: linear-gradient(to right, white 50%, var(--color-highlight) 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+    transition: background-position 0.1s ease-in, color 0.1s ease-in;
+    background-color: white;
+    color: var(--color-highlight);
+}
+
+.inner-nav.nav-tabs .nav-link.reverse-animation {
+    background: linear-gradient(to left, white 50%, var(--color-highlight) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+}
+
+.inner-nav.nav-tabs .nav-link.active.reverse-animation {
+    background-position: left bottom;
+}
+
+.inner-nav.nav-tabs .nav-link.active {
+    background-position: right bottom;
+    /* background-color: var(--color-highlight); */
+    color: white;
+}
+
+.nav-container {
+    box-shadow: 0px 1px 1px #C2C2C2;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.mx-6 {
+    margin-left: 6.5rem;
+    margin-right: 6.5rem;
+}
+
+.bg-light-gray {
+    background-color: var(--color-lightbg);
+}
+
+.h6 {
+    font-size: 0.7rem;
+}
+
+.table th.borderless {
+    border-top: none;
+}
+
+.table tr td {
+    vertical-align: middle;
+}
+
+.table td, .table th {
+    padding: 0.6rem;
+}
+
+.tooltip {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.height-fill {
+    height: calc(100vh - 201px);
+    overflow: scroll;
+}
+.height-fill::-webkit-scrollbar {
+    width: auto;
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+.hidden {
+    display: none !important;
+}
+
+.graph-wrapper {
+    position: relative;
+    height: 80%;
+}
+
+#time-graph-wrapper {
+    min-height: 55%;
+    height: 55%;
+}
+
+.smaller-font {
+    font-size: 0.7rem;
+}
+
+#settings-icon {
+position: absolute;
+    padding: 0;
+    right: 2px;
+    top: 8px;
+}
+
+#settings-icon a {
+    margin: 0;
+    padding: 0;
+}
+
+.btn span.glyphicon {    			
+	opacity: 0;				
+}
+.btn.active span.glyphicon {				
+	opacity: 1;				
+}
+
+.settings-form {
+display: flex;
+    box-shadow: 0px -1px 1px #C2C2C2;
+    flex-direction: column;
+    padding: 10% 13%;
+}
+
+.settings-form .custom-checkbox {
+    margin-bottom: 20px;
+}
+
+.settings-form.height-fill {
+    height: calc(100vh - 170px);
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    background-color: var(--color-highlight) !important;
+}
+
+.disclaimer-settings {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    color: #888888;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 0.66rem;
+    text-align: center;
+}
+
+#settings-icon .icon {
+    height: 1.1rem;
+    width: 1.1rem;
+}

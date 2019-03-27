@@ -1,0 +1,43 @@
+{
+    "manifest_version": 2,
+    "name": "MyAdPrice",
+    "description": "MyAdPrice will tell you how much advertisers are willing to pay to show you their ads.",
+    "version": "1.1.7",
+    "browser_action": {
+        "default_icon": "img/icon.png",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "js/bidderURLs.js",
+                "js/content.js"
+            ]
+        }
+    ],
+    "background": {
+        "scripts": [
+            "lib/jquery-3.3.1.min.js",
+            "js/bidderURLs.js",
+            "js/dfp_parser.js",
+            "js/background.js"
+        ]
+    },
+    "permissions": [
+        "activeTab",
+        "storage",
+        "webRequest",
+        "webRequestBlocking",
+        "*://*/*",
+        "<all_urls>"
+    ],
+    "icons": {
+        "16": "img/icon16.png",
+        "48": "img/icon48.png",
+        "128": "img/icon128.png"
+    }
+}

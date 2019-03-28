@@ -19,14 +19,14 @@ MyAdPrice utilizes hooks in the [Prebid.js](https://github.com/prebid/Prebid.js/
 
 ## Installation
 Please use these links to install the extension for your browser:
-- [Google Chrome](bit.ly/myadprice-ch)
-- [Mozilla Firefox](bit.ly/myadprice-fx)
+- [Google Chrome](https://bit.ly/myadprice-ch)
+- [Mozilla Firefox](https://bit.ly/myadprice-fx)
 
 MyAdPrice is not currently offered for Safari and Edge. Please make sure you don't have ad blockers enabled because there will be no ad activity on websites in that case.
 
-MyAdPrice works on thousands of websites, some of which are listed [here](myadprice.com/websites). Please also note that many websites avoid using header bidding techniques, especially if you are in Europe, unless you explicity accept cookies.
+MyAdPrice works on thousands of websites, some of which are listed [here](https://www.myadprice.com/websites). Please also note that many websites avoid using header bidding techniques, especially if you are in Europe, unless you explicity accept cookies.
 
-We recommend that afterr you install the extension, click the "_I agree_" button in the _History_ and let it sit for a while as you browse the web so that it accumulates data (on your browser's _local storage_) about what revenues websites make from your visits and how bids for your views compare with those of other users.
+We recommend that after you install the extension, click the "_I agree_" button in the _History_ and let it sit for a while as you browse the web so that it accumulates data (on your browser's _local storage_) about what revenues websites make from your visits and how bids for your views compare with those of other users.
 
 ## Technical Notes
 MyAdPrice is a very simple browser extension. There are only a few UI-related dependencies that you can fetch by running `./getdeps.sh`. This script uses `curl`.

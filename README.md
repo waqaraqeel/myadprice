@@ -13,9 +13,7 @@ MyAdPrice
 
 **An ad-tracking extension for Chrome and Firefox**
 
-MyAdPrice utilizes hooks in the [Prebid.js](https://github.com/prebid/Prebid.js/) library to track ad activity on websites. By default, it sends out __no data__ from the user's device. However, users can *opt-in* to send specific, anonymized statistics to our servers detailed [here](https://www.myadprice.com/terms), to help in our research.
-
-
+*MyAdPrice* allows you to track how much money advertisers bid to show you ads as you surf the Web. It utilizes hooks in the [Prebid](https://github.com/prebid/Prebid.js/) library along with other methods to track this activity. By default, it sends out __no data__ from the user's device. However, users can *opt-in* to send specific, anonymized [statistics](https://www.myadprice.com/terms) to our servers to help in our research.
 
 ## Installation
 Please use these links to install the extension for your browser:
@@ -29,7 +27,7 @@ MyAdPrice works on thousands of websites, some of which are listed [here](https:
 We recommend that after you install the extension, click the "_I agree_" button in the _History_ and let it sit for a while as you browse the web so that it accumulates data (on your browser's _local storage_) about what revenues websites make from your visits and how bids for your views compare with those of other users.
 
 ## Technical Notes
-MyAdPrice is a very simple browser extension. There are only a few UI-related dependencies that you can fetch by running `./getdeps.sh`. This script uses `curl`.
+MyAdPrice is a very simple browser extension. There are only a few UI-related dependencies that you can fetch by running `make`.
 
 Besides utilizing prebid.js functions, the extension also has fallback mechanisms that include inspecting outgoing network requests to ad servers to infer data about the ads. In its attempt to show you as much information as it can, MyAdPrice may sometimes encounter false positives such as tracking pixels registering as ad slots of unknown size.
 

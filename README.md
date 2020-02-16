@@ -2,7 +2,7 @@
 
 
 <h1 align="center">
-<img  src="https://www.myadprice.com/static/images/icon.png" height="30" width="30">
+<img  src="https://myadprice.github.io/static/images/icon.png" height="30" width="30">
 MyAdPrice
 </h1>
 <p align="center">
@@ -13,7 +13,7 @@ MyAdPrice
 
 **An ad-tracking extension for Chrome and Firefox**
 
-*MyAdPrice* allows you to track how much money advertisers bid to show you ads as you surf the Web. It utilizes hooks in the [Prebid](https://github.com/prebid/Prebid.js/) library along with other methods to track this activity. By default, it sends out __no data__ from the user's device. However, users can *opt-in* to send specific, anonymized [statistics](https://www.myadprice.com/terms) to our servers to help in our research.
+*MyAdPrice* allows you to track how much money advertisers bid to show you ads as you surf the Web. It utilizes hooks in the [Prebid](https://github.com/prebid/Prebid.js/) library along with other methods to track this activity. By default, it sends out __no data__ from the user's device. However, users can *opt-in* to send specific, anonymized [statistics](https://myadprice.github.io/terms) to our servers to help in our research.
 
 ## Installation
 Please use these links to install the extension for your browser:
@@ -22,7 +22,7 @@ Please use these links to install the extension for your browser:
 
 MyAdPrice is not currently offered for Safari and Edge. Please make sure you don't have ad blockers enabled because there will be no ad activity on websites in that case.
 
-MyAdPrice works on thousands of websites, some of which are listed [here](https://www.myadprice.com/websites). Please also note that many websites avoid using header bidding techniques, especially if you are in Europe, unless you explicity accept cookies.
+MyAdPrice works on thousands of websites, some of which are listed [here](https://myadprice.github.io/websites). Please also note that many websites avoid using header bidding techniques, especially if you are in Europe, unless you explicity accept cookies.
 
 We recommend that after you install the extension, click the "_I agree_" button in the _History_ and let it sit for a while as you browse the web so that it accumulates data (on your browser's _local storage_) about what revenues websites make from your visits and how bids for your views compare with those of other users.
 

@@ -22,7 +22,7 @@
 
 /******************************************************************************/
 
-var URL = 'https://www.myadprice.com/'
+var URL = 'https://myadprice.cs.duke.edu/'
 if (!browser)
     var browser = chrome;
 // var URL = 'http://localhost:8000/'

@@ -1,24 +1,4 @@
 {
-    "manifest_version": 2,
-    "name": "MyAdPrice",
-    "description": "MyAdPrice will tell you how much advertisers are willing to pay to show you their ads.",
-    "version": "1.1.7",
-    "browser_action": {
-        "default_icon": "img/icon.png",
-        "default_popup": "popup.html"
-    },
-    "content_scripts": [
-        {
-            "matches": [
-                "http://*/*",
-                "https://*/*"
-            ],
-            "js": [
-                "js/bidderURLs.js",
-                "js/content.js"
-            ]
-        }
-    ],
     "background": {
         "scripts": [
             "lib/jquery-3.3.1.min.js",
@@ -27,6 +7,30 @@
             "js/background.js"
         ]
     },
+    "browser_action": {
+        "default_icon": "img/icon.png",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "js/bidderURLs.js",
+                "js/content.js"
+            ],
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ]
+        }
+    ],
+    "description": "MyAdPrice will tell you how much advertisers are willing to pay to show you their ads.",
+    "icons": {
+        "128": "img/icon128.png",
+        "16": "img/icon16.png",
+        "48": "img/icon48.png"
+    },
+    "manifest_version": 2,
+    "name": "MyAdPrice",
     "permissions": [
         "activeTab",
         "storage",
@@ -35,9 +39,5 @@
         "*://*/*",
         "<all_urls>"
     ],
-    "icons": {
-        "16": "img/icon16.png",
-        "48": "img/icon48.png",
-        "128": "img/icon128.png"
-    }
+    "version": "1.1.8"
 }

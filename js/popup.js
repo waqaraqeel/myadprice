@@ -59,18 +59,15 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     $('#btn-agree').on('click', function () {
-        browser.storage.local.set({ opted: true, opted_tracert: true});
+        browser.storage.local.set({ opted: true });
         $('#send-bids').prop('checked', true);
-        $('#send-tracert').prop('checked', true);
         $('.not-agreed').addClass('hidden');
         createStatsChart();
     })
 
-    browser.storage.local.get({ opted: false, opted_tracert: false }, function (result) {
+    browser.storage.local.get({ opted: false }, function (result) {
         if (result.opted)
             $('#send-bids').prop('checked', true);
-        if (result.opted_tracert)
-            $('#send-tracert').prop('checked', true);
     });
 
     $('#send-bids').click(function () {
@@ -78,11 +75,5 @@ document.addEventListener('DOMContentLoaded', function () {
             browser.storage.local.set({ opted: true });
         else
             browser.storage.local.set({ opted: false });
-    });
-    $('#send-tracert').click(function () {
-        if ($(this).prop('checked'))
-            browser.storage.local.set({ opted_tracert: true });
-        else
-            browser.storage.local.set({ opted_tracert: false });
     });
 });

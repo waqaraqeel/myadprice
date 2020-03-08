@@ -53,9 +53,8 @@ function getPbjsData(tabId) {
                 response.slots = parse_dfp(dfp_urls[tabId]);
             prebidTracker[tabId] = response;
             prebidTracker[tabId].stored = false;
-            browser.storage.local.get({ opted: false, opted_tracert: false }, function (result) {
-                if (result.opted) {
-                    response.tracert = result.opted_tracert;
+            browser.storage.local.get({ opted: false }, function (result) {
+                if (result.opted && response.slots) {
                     reportToBase(response);
                 }
             });
